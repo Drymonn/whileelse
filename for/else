@@ -1,0 +1,13 @@
+# add five non-negative numbers supplied by the user
+count = sum = 0
+print("Pease provide five non-negative numbers when prompted")
+while count < 5:
+    # Get value from the uer
+    val = eval(input('Enter number: '))
+    if val < 0:
+       print("Negative number not acceptable! Terminating")
+       break
+    count += 1
+    sum += val
+else:
+   print('Average =", sum/count')
